@@ -75,3 +75,21 @@ console.log(`SubstringString by substring “the” from anotherString: ${substr
 document.getElementById("slice-string").innerHTML = `Create sliceString by slice “is a” from myString : <span class="note"> ${sliceString}</span>`;
 //Display the substring string
 document.getElementById("substring-string").innerHTML = `Create substringString by substring “the” from anotherString : <span class="note"> ${substringString}</span>`;
+
+//Step 4: Change the case of the myName string
+// Use the toUpperCase
+myName.toUpperCase();
+
+//Display the uppercase string
+console.log(`Uppercase of myName : ${myName.toUpperCase()}`);
+
+// toLowerCase functions
+myName.toLowerCase();
+
+//Display the lowercase string
+console.log(`Lowercase of myName : ${myName.toLowerCase()}`);
+
+// Display the uppercase string
+document.getElementById("uppercase-string").innerHTML = `Uppercase of myName : <span class="note"> ${myName.toUpperCase()}</span>`;
+// Display the lowercase string
+document.getElementById("lowercase-string").innerHTML = `Lowercase of myName : <span class="note"> ${myName.toLowerCase()}</span>`;
