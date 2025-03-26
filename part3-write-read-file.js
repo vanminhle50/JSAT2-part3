@@ -25,3 +25,21 @@ fs.writeFile('./file-text/output.txt', data, (err) => {
         console.log("File written successfully");
     }
 });
+
+//Step 08: Read a text file using Node.js
+// Use the 'readFile' function to read the contents of 'output.txt'
+fs.readFile("./file-text/output.txt", (err, fileText) => {
+    // Check for errors during reading
+    // Log a message to the console to indicate that we are reading from a file
+    console.log("Reading from file");
+    if (err) {
+        // Log the error if any occurs
+        console.error(err);
+        return;
+    }
+    // Confirm successful reading
+    // Display the content of the file
+    console.log("The file content are: ");
+    // Convert the file content to string and log it to the console
+    console.log(fileText.toString());
+});
