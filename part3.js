@@ -79,13 +79,11 @@ document.getElementById("substring-string").innerHTML = `Create substringString 
 //Step 4: Change the case of the myName string
 // Use the toUpperCase
 myName.toUpperCase();
-
 //Display the uppercase string
 console.log(`Uppercase of myName : ${myName.toUpperCase()}`);
 
 // toLowerCase functions
 myName.toLowerCase();
-
 //Display the lowercase string
 console.log(`Lowercase of myName : ${myName.toLowerCase()}`);
 
@@ -93,3 +91,40 @@ console.log(`Lowercase of myName : ${myName.toLowerCase()}`);
 document.getElementById("uppercase-string").innerHTML = `Uppercase of myName : <span class="note"> ${myName.toUpperCase()}</span>`;
 // Display the lowercase string
 document.getElementById("lowercase-string").innerHTML = `Lowercase of myName : <span class="note"> ${myName.toLowerCase()}</span>`;
+
+//Step 5: Use concat, trim, replace and split to create new strings 
+/**
+ * @let {string} concatString - A concatenated string of hello and myName
+ * @let {string} trimString - A trimmed version of anotherString
+ * @let {string} replaceString - A version of myString with "is a" replaced by an empty space
+ * @let {Array<string>} splitString - An array of substrings created by splitting myString on spaces
+ */
+//Concat hello and myName together
+let concatString = hello.concat(" ", myName);
+//Display the concatenated string
+console.log(`Join the hello string and myName: ${concatString}`);
+
+//Use the trim function to remove the spaces in anotherString
+let trimString = anotherString.trim();
+//Display the trimmed string
+console.log(`Trim the spaces in anotherString: ${trimString}`);
+
+//Use the replace function to change “is a” to an empty space in myString
+let replaceString = myString.replace("is a", "");
+//Display the replaced string
+console.log(`Replace “is a” to an empty space in myString: ${replaceString}`);
+
+//Split myString on the spaces.
+let splitString = myString.split(" ");
+//Display the split string
+console.log(`Split myString on the spaces: ${splitString}`);
+
+
+//Display the concatenated string
+document.getElementById("concat-string").innerHTML = `Concat hello and myName together : <span class="note"> ${concatString}</span>`;
+//Display the trimmed string
+document.getElementById("trim-string").innerHTML = `Trim the spaces in anotherString : <span class="note"> ${trimString}</span>`;
+//Display the replaced string
+document.getElementById("replace-string").innerHTML = `Replace “is a” to an empty space in myString : <span class="note"> ${replaceString}</span>`;
+//Display the split string
+document.getElementById("split-string").innerHTML = `Split myString on the spaces : <span class="note"> ${splitString}</span>`;
