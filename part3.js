@@ -55,3 +55,23 @@ let eleventhCharMyString = myString[10];
 console.log(`11th Character of myString : ${eleventhCharMyString}`);
 // Display the 11th character of the strings
 document.getElementById("eleventh-character").innerHTML = `11th Character of myString : <span class="note"> ${eleventhCharMyString}</span>`;
+
+//Step 3: Use the slice and substring functions to create new strings.
+/**
+ * @let {string} sliceString - A substring of myString created using slice
+ * @let {string} substringString - A substring of anotherString created using substring
+ */
+//Slice “is a” from myString
+let sliceString = myString.slice(5, 9);
+//Display the sliced string
+console.log(`SliceString by slice “is a” from myString: ${sliceString}`);
+
+//Use substring to get “the” from anotherString
+let substringString = anotherString.substring(6, 9);
+//display the substring string
+console.log(`SubstringString by substring “the” from anotherString: ${substringString}`);
+
+//Display the sliced string
+document.getElementById("slice-string").innerHTML = `Create sliceString by slice “is a” from myString : <span class="note"> ${sliceString}</span>`;
+//Display the substring string
+document.getElementById("substring-string").innerHTML = `Create substringString by substring “the” from anotherString : <span class="note"> ${substringString}</span>`;
